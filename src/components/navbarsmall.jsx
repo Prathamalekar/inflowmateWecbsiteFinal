@@ -7,14 +7,14 @@ const targetElem = document.getElementsByClassName("anchor-container")
 
 
 function NavbarSmallScreen(){
-  let count = 0
-  let count2 = 0
-  let boolean=true;
   const [showAnchors, setShowAnchors] = useState(false);
-  const [stateButton, setstateButton] = useState(true)
+  const [stateButton, setstateButton] = useState(false)
 
 
   const buttonRef = useRef(null);
+  const toggleHamburger = () => {
+    setstateButton(!stateButton);
+  };
 
 
   
@@ -22,18 +22,11 @@ function NavbarSmallScreen(){
     if (!showAnchors) {
       return null;
     }
-    const handelLink = ()=>{
-      count++;
-      if(count%2 == 0){
-        targetElem.style.display = "none";
-        return
-      }
 
-    }
     
     function handelChange(){
       setTimeout(()=>{setShowAnchors(false);
-      setstateButton(false)
+      setstateButton(!stateButton)
        
       
       
@@ -69,7 +62,7 @@ function NavbarSmallScreen(){
     <div className="navbarSmallScreen">
       <div class="container-navbarsmall">
         <img class="image-navbarsmall" src={inflowmate} alt="Your Image"/>
-        <button ref={buttonRef} ><Hamburger size={20} color="#52525b" onToggle={(toggled) => {
+        <button ref={buttonRef} ><Hamburger size={20} color="#52525b" toggled={stateButton} toggle={toggleHamburger} onToggle={(toggled) => {
            if (toggled) {
              setShowAnchors(true)
            }
@@ -80,7 +73,7 @@ function NavbarSmallScreen(){
     }} /></button>
         
       </div>
-      <div style={{}}>
+      <div>
          {renderAnchors()}
       </div>
     </div>

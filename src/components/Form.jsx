@@ -36,7 +36,7 @@ function Form(){
     return(
         <div className="form-container">
             <p className="Lets-begin"> Let’s begin!</p>
-             <p className="replace-form">Email: Inflowmateofficial@gmail.com</p>
+             <p className="replace-form">Email: contact@inflowmate.com</p>
              <p className="replace-form">Phone: +91 986713960</p>
              <p className="replace-form">Instagram: Inflowmateofficial</p>
              <p className="replace-form">LinkedIn: Inflowmateofficial</p>

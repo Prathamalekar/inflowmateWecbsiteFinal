@@ -207,7 +207,8 @@
     font-size: 2.5vw;
   }
   .form-container{
-    margin:0
+    margin:0;
+    width:auto
   }
   .form-container label {
     font-size:1.9vw
@@ -224,6 +225,9 @@
   }
   .replace-form{
     font-size: 1.5vh;
+  }
+  .form1{
+    margin:5% 0;
   }
 
 }
