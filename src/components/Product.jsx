@@ -56,7 +56,7 @@ function Product(){
         <div>
           
            <div className="letsBuildTypo" >
-              <div className="LetsBuild">Let's build <span className="Next-gen">Next-Gen Chatbots <br/></span> that <br/>speak for themselves</div>
+              <div className="LetsBuild">Let's build <span className="Next-gen">Next-Gen Chatbots </span> that <br/> speak for themselves</div>
            </div>
            <div className="content">Powered by cutting-edge LLMs, leveraging human-like chatbots has never been this accessible.</div>
            <div>{obj.map(mapping)}</div>

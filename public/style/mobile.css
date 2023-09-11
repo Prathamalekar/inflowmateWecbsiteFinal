@@ -135,8 +135,9 @@
     letter-spacing: 0.1vh;
    }
    .LetsBuild {
-    font-size: 4.375vh;
-    margin: 4.5vh 2vh 1vh;
+    font-size: 8vw;
+    margin:0
+    
 
    }
    .Next-gen{
@@ -313,6 +314,7 @@
   }
   .Next-gen{
     line-height: 7vh;
+    font-size:8vw;
   }
   .Scale-better{
       height: 10vh;
