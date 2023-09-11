@@ -136,7 +136,8 @@
    }
    .LetsBuild {
     font-size: 4.375vh;
-    margin: 4.5vw 2vw 1.5vw
+    margin: 4.5vw 2vw 1.5vw;
+    line-height: 3vw;
    }
    .Next-gen{
     font-size: 4.375vh;
